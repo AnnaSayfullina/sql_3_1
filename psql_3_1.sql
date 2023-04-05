@@ -13,3 +13,9 @@ UPDATE employee SET first_name = 'Петр', last_name ='Петров', age = 65
 SELECT * FROM employee;
 DELETE FROM employee WHERE id = 2;
 SELECT * FROM employee;
+INSERT INTO employee (first_name, last_name, gender, age)
+VALUES ('Антон', 'Антонов', 'муж', 31), ('Дарья', 'Иванова', 'жен', 32), ('Андрей', 'Андреев', 'муж', 55);
+SELECT * FROM employee;
+INSERT INTO employee (first_name, last_name, gender, age)
+VALUES ('Степанида', 'Степанова', 'жен', 16), ('Олег', 'Олегов', 'муж', 17);
+SELECT * FROM employee;
