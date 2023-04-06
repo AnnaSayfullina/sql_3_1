@@ -19,3 +19,15 @@ SELECT * FROM employee;
 INSERT INTO employee (first_name, last_name, gender, age)
 VALUES ('Степанида', 'Степанова', 'жен', 16), ('Олег', 'Олегов', 'муж', 17);
 SELECT * FROM employee;
+SELECT first_name AS Имя,
+       last_name AS Фамилия
+FROM employee;
+SELECT * FROM employee
+WHERE age < 30 OR age > 50;
+SELECT * FROM employee
+WHERE age BETWEEN 30 AND 50;
+SELECT * FROM employee
+ORDER BY last_name DESC;
+SELECT * FROM employee
+WHERE first_name LIKE '_____%';
+
